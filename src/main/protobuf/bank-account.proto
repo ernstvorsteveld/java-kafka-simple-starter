@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package com.sternitc.kafkatest.account.domain;
+option java_outer_classname = "AccountInfoProto";
+
+
+message BankAccount {
+  required string date_time = 1;
+  required string id = 2;
+  required string iban = 3;
+  required float balance = 4;
+}
